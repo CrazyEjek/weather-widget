@@ -83,8 +83,7 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  background: transparent url('../icon/edit.svg') center/contain no-repeat;
-
+  background: transparent url('/icon/edit.svg') center/contain no-repeat;
 }
 
 .widget__temp-big {
@@ -127,7 +126,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .widget__pressure {
@@ -138,7 +136,8 @@
 
 .widget__forecast {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  /* сюда можно написать (3, 1fr) */
 }
 
 .widget__day-item {
