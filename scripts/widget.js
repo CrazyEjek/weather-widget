@@ -1,12 +1,11 @@
 import { startWidget } from './modules/widgetService.js';
-import { fetchWeather } from './modules/APIservice.js';
-
+import {cityServicesSearch} from './modules/cityServicesSearch.js';
 
 const initWidget = async (app) => {
     const widget = await startWidget();
     app.append(widget);
 
-    fetchWeather('Пермь');
-}
+cityServicesSearch(widget);
+};
 
 initWidget (document.querySelector('#app'));
