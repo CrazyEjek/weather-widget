@@ -136,7 +136,7 @@
 
 .widget__forecast {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   /* сюда можно написать (3, 1fr) */
 }
 
